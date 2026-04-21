@@ -1,0 +1,280 @@
+/* intento de plantilla basada en los mockups de la presentación que hicimos */
+body { 
+    font-family: Arial,Helvetica, sans-serif;
+    margin:0;
+    background:#fafafa;
+    color:#222;
+}
+
+.container { 
+    display:block;
+    background-color:#eee;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 650px;
+    margin: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    margin-top: 150px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    font-size: 24px;
+    color: #333;
+    text-align: left;
+}
+
+.portada {
+    height: 130px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.register-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: 10px 0;
+}
+
+h1 {
+    color: #617A3A;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.kurobri{
+    background: linear-gradient(90deg, #617A3A, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.eslogan {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color:#617A3A;
+    text-align: center;
+}
+
+p {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 17px;
+    text-align: justify;
+    color: #000000;
+    font-weight: 300;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 60px;
+    transition: background-color 0.3s;
+    color: #ffffff;
+    margin-top: 25px;
+}
+
+.topbar { 
+    background:#e6e6e6;
+    padding:10px 20px;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 70px;
+    margin-right: 10px;
+}
+
+.brand {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bold; 
+    font-size:24px;
+    color: darkgreen;
+}
+
+.selector {
+    background:#eee;
+    margin:18px auto; 
+    padding:18px; 
+    max-width:900px; 
+    border-radius:12px; 
+    box-shadow:0 1px 0 rgba(0,0,0,0.05);
+}
+
+.controls { 
+    display:flex;
+    gap:12px; 
+    align-items:center; 
+}
+
+.controls label { 
+    font-size:14px; 
+}
+
+.controls select { 
+    padding:6px; 
+}
+
+.controls button { 
+    padding:8px 12px; 
+    border-radius:6px; 
+    border:0; 
+    cursor:pointer; 
+}
+
+#accept { 
+    background:#6b8a3e; 
+    color:white; 
+}
+
+#clear { 
+    background:#6e6e6e; 
+    color:white; 
+}
+
+.mapbox { 
+    max-width:900px; 
+    margin:0 auto; 
+}
+
+.map { 
+    width:100%; 
+    height:520px; 
+    border:1px solid #ddd; 
+    border-radius:8px; 
+    background:#fff; 
+}
+
+.form{
+    max-width:250px;
+    padding:20px;
+    background:#eee;
+    border-radius:12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.cuenta {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.reg-log{
+    text-align: center;
+}
+
+.user-container {
+    position: relative;
+    display: inline-block;
+}
+
+.user {
+    position: relative;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #e6e6e6;
+    border: 1px solid #000000;
+    transition: background-color 0.3s;
+    min-width: 100px;
+    font-size:14px; 
+    color:#666; 
+    text-align: center;
+}
+
+.user-dropdown {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    z-index: 100;
+    min-width: 140px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.user-dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.user-dropdown li {
+    border-bottom: 1px solid #eee;
+}
+.user-dropdown li:last-child {
+    border-bottom: none;
+}
+.user-dropdown a {
+    display: block;
+    padding: 10px 16px;
+    color: #222;
+    text-decoration: none;
+}
+.user-dropdown a:hover {
+    background: #f0f0f0;
+}
+
+.fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: scale(0.98);
+    }
+}
+
+.principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 24px;
+}
+
+.Main {
+    height: 500px;
+    object-fit: contain;
+    display: block;
+}
+ .lista{
+    width: 272px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+ }
